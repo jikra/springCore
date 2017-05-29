@@ -1,0 +1,20 @@
+package cz.cizek.edu.injectionmethod.avarecontext.bean;
+
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Service;
+
+/**
+ * @author jiricizek <jiri.cizek@cleverlance.com>
+ */
+@Service
+@Scope(value = "prototype")
+public class PBean {
+
+    public PBean() {
+        System.out.println("BPean created");
+    }
+
+    public void doSomething() {
+        System.out.println("PBean do something");
+    }
+}
